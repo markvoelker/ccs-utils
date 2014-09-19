@@ -1,0 +1,6 @@
+A simple script to look through components, find the commits that are
+locally carried, generate patchfiles for them, and stick them somewhere.
+Handy when someone wants to inspect stuff that isn't in the requisite
+upstream branch (as would often be the case if, say, we cherry-picked
+a patch that hasn't finished the review process yet because it fixes
+something that's broken in our infrastructure).
