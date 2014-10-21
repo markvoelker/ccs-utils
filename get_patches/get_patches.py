@@ -56,9 +56,9 @@ if not os.path.exists(PATCHDIR):
 # Iterate through the list
 for comp in COMPONENTS:
     # Get a clean checkout
-    #subprocess.call(
-        #'git', 'clone', '-b', 'cis-havana',
-        #"https://github.com/CiscoSystems/%s" % component)
+    subprocess.call([
+        'git', 'clone', '-b', 'cis-havana',
+        "https://github.com/CiscoSystems/" + comp])
 
     # Change to the component's checkout directory
     print 'cd ' + os.getcwd() + '/' + comp
